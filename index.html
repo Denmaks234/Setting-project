@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+      <div class="header__inner">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Респонденти</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Статистика</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Опитування</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Демо-опитування</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Оплата</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Налаштування</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Вихід</a></li>
+                    </ul>
+                </nav>
+                <div class="header__country">
+                    <h3 class="header__title">
+                        Країна
+                        <span > Україна</span>
+                       </h3>
+                  
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <section class="settings">
+        <div class="settings__inner">
+      <h1 class="settings__title">Налаштування</h1>
+      <nav class="menu">
+         <ul class="settings__list">
+        <li class="settings__item"><a class="settings__link" href="">Переклади</a></li>
+        <li class="settings__item"><a class="settings__link" href="">Параметри</a></li>
+        <li class="settings__item"><a class="settings__link"href="">Мови</a></li>
+
+      </ul>
+      </nav>
+     
+        </div>
+         <div class="settings__btns">
+        <button class="settings__btn-import">Імпортувати переклади</button>
+        <button class="settings__btn-export">Експорт перекладів</button>
+      </div>
+    </section>
+    <div class="overflow">
+           <div class="modal__import">
+        <div class="modal__wrraper">
+         <h1 class="modal__title">Імпортувати переклади</h1>
+        <div class="form">
+            <div class="modal__subtitle">Оберіть файл (формат .xlsx) </div>
+        <input type="text">
+        </div>
+        <div class="modal__btns">
+            <div class="modal__btn close">Скасувати</div>
+            <div class="modal__btn orange">Завантажити</div>
+        </div>
+
+
+        </div>
+       
+        
+
+    </div>
+    </div>
+ 
+    <div class="overflow">
+        <div class="modal__export">
+        <div class="modal__wrraper">
+         <h1 class="modal__title">Експорт перекладів</h1>
+        <div class="modal__btns1">
+            <div class="modal__btn close">Скасувати</div>
+            <div class="modal__btn orange">Експорт</div>
+        </div>
+
+
+        </div>
+    </div>
+     
+       
+        
+
+    </div>
+    <table>
+    <tr class="table__title">
+        <th class="table__title-id">ID</th>
+        <th class="table__title-categori">Категорія</th>
+        <th class="table__title-after">Підкатегорія</th>
+        <th class="table__title-key">Ключ</th>
+        <th class="table__title-ukrainian">українська</th>
+        <th class="table__title-english">англійська</th>
+        <th class="table__title-espanion">іспанська</th>
+    </tr>
+    <tr class="table__setting">
+        <td class="select__item"><select class="select" >
+            <option value="Все">Все</option>
+            <option value="Все">Все</option>
+        </select></td>
+        <td><input type="text"></td>
+        <td class="english__input"><input type="text"></td>
+        <td class="espanion__input"><input type="text"></td>
+    </tr>
+    <tr class="table__list">
+        <td class="table__id">456778</td>
+        <td class="table__categori">app</td>
+        <td class="table__after-categori">license</td>
+        <td class="table__key">key</td>
+        <td class="table__ukrainian">Умови користування</td>
+        <td class="table__english">Terms of use</td>
+        <td class="table__espanion">Terms of use</td>
+    </tr>
+    <tr class="table__list">
+        <td class="table__id">456778</td>
+        <td class="table__categori">app</td>
+        <td class="table__after-categori">logout</td>
+        <td class="table__key">key</td>
+        <td class="table__ukrainian"> Вихід</td>
+        <td class="table__english">Exit</td>
+        <td class="table__espanion">Exit</td>
+    </tr>
+    <tr class="table__list">
+        <td class="table__id">456778</td>
+        <td class="table__categori">backoffice</td>
+        <td class="table__after-categori">ALERT_TITLE</td>
+        <td class="table__key">key</td>
+        <td class="table__ukrainian"> Push повідомлення вимкнені</td>
+        <td class="table__english">Push notifications turned off</td>
+        <td class="table__espanion">Push notifications turned off</td>
+    </tr>
+    <tr class="table__list">
+        <td class="table__id">456778</td>
+        <td class="table__categori">app</td>
+        <td class="table__after-categori">license</td>
+        <td class="table__key">key</td>
+        <td class="table__ukrainian">Умови користування</td>
+        <td class="table__english">Terms of use</td>
+        <td class="table__espanion">Terms of use</td>
+    </tr>
+    <tr class="table__list">
+        <td class="table__id">456778</td>
+        <td class="table__categori">app</td>
+        <td class="table__after-categori">logout</td>
+        <td class="table__key">key</td>
+        <td class="table__ukrainian"> Вихід</td>
+        <td class="table__english">Exit</td>
+        <td class="table__espanion">Exit</td>
+    </tr>
+    <tr class="table__list">
+        <td class="table__id">456778</td>
+        <td class="table__categori">backoffice</td>
+        <td class="table__after-categori">ALERT_TITLE</td>
+        <td class="table__key">key</td>
+        <td class="table__ukrainian"> Push повідомлення вимкнені</td>
+        <td class="table__english">Push notifications turned off</td>
+        <td class="table__espanion">Push notifications turned off</td>
+    </tr>
+    <tr class="table__list">
+        <td class="table__id">456778</td>
+        <td class="table__categori">app</td>
+        <td class="table__after-categori">license</td>
+        <td class="table__key">key</td>
+        <td class="table__ukrainian">Умови користування</td>
+        <td class="table__english">Terms of use</td>
+        <td class="table__espanion">Terms of use</td>
+    </tr>
+    <tr class="table__list">
+        <td class="table__id">456778</td>
+        <td class="table__categori">app</td>
+        <td class="table__after-categori">logout</td>
+        <td class="table__key">key</td>
+        <td class="table__ukrainian"> Вихід</td>
+        <td class="table__english">Exit</td>
+        <td class="table__espanion">Exit</td>
+    </tr>
+    <tr class="table__list">
+        <td class="table__id">456778</td>
+        <td class="table__categori">backoffice</td>
+        <td class="table__after-categori">ALERT_TITLE</td>
+        <td class="table__key">key</td>
+        <td class="table__ukrainian"> Push повідомлення вимкнені</td>
+        <td class="table__english">Push notifications turned off</td>
+        <td class="table__espanion">Push notifications turned off</td>
+    </tr>
+    <tr class="table__list">
+        <td class="table__id">456778</td>
+        <td class="table__categori">backoffice</td>
+        <td class="table__after-categori">ALERT_TITLE</td>
+        <td class="table__key">key</td>
+        <td class="table__ukrainian"> Push повідомлення вимкнені</td>
+        <td class="table__english">Push notifications turned off</td>
+        <td class="table__espanion">Push notifications turned off</td>
+    </tr>
+   
+    </table>
+    <footer class="footer">
+        <div class="container">
+        <div class="page__number">
+            <div class="left">
+                <img src="img/left.svg" alt="">
+            </div>
+            <ul class="page__number-menu">
+        <li class="page__number-item"><a class="page__number-link" href="">1</a></li>
+         <li class="page__number-item"><a class="page__number-link" href="">2</a></li>
+         <li class="page__number-item"><a class="page__number-link" href="">3</a></li>
+         <li class="page__number-item"><a class="page__number-link" href="">4</a></li>
+         <li class="page__number-item"><a class="page__number-link" href="">5</a></li>
+
+            </ul>
+         
+         <div class="right">
+            <img src="img/right.svg" alt="">
+         </div>
+        </div>
+    </div>
+    </footer>
+  <script src="./main.js"></script>
+</body>
+</html>

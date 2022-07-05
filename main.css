@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul,
+ol {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+.body{
+    box-sizing:border-box
+}
+.container{
+    max-width: 1345px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+
+}
+.header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.21) ;
+}
+.header__inner{
+    display: flex;
+    align-items: center;
+    padding: 17px 21px 7px 66px;
+    justify-content: space-between;
+}
+.menu__list{
+    display: flex;
+}
+.menu__item{
+    margin-right: 35px;
+}
+.menu__link{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #777777;
+}
+.menu__item:last-child{
+    margin-right: 0;
+}
+
+.header__country{
+    width: 89px;
+   
+}
+.header__title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+
+color: #000000;
+
+}
+.header__title span{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+color: #000000;
+
+}
+
+/* settings */
+.settings{
+    padding: 17px 21px 7px 130px;
+}
+.settings__inner{
+    margin-top: 30px;
+    display: flex;
+    align-items:center;
+    
+}
+.settings__title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+}
+.settings__list{
+    display: flex;
+    align-items:center;
+    padding-left: 60px;
+}
+.settings__item{
+    padding-right: 60px;
+}
+.settings__link{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #666666;
+
+}
+.settings__btns{
+    margin-top: 21px;
+}
+.settings__btn-import, .settings__btn-export{
+    
+    width: 215px;
+    padding: 10px 12px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+background: #F0F0F0;
+border: 1px solid #666666;
+border-radius: 20px;
+margin-right: 41px;
+
+}
+.modal__export,.modal__import{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   position: absolute;
+   display: none;
+   top: 90px;
+  
+}
+.modal__import.active{
+    display: flex;
+}
+.modal__export.active{
+    display: flex;
+}
+.modal__wrraper{
+    width: 1280px;
+    height: 354px;
+    background: #FFFFFF;
+border-radius: 30px;
+padding-top: 35px;
+padding-left: 50px;
+
+
+}
+.modal__title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+color: #000000;
+
+}
+.form{
+    margin-top: 35px;
+}
+.modal__subtitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 11px;
+}
+.modal__btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 117px;
+}
+.modal__btns1{
+    display: flex;
+    justify-content: center;
+    margin-top: 210px;
+}
+.modal__btn{
+    display: flex;
+    justify-content: center;
+   width: 215px;
+   padding: 10px 55px;
+   background: #F0F0F0;
+border: 1px solid #666666;
+border-radius: 20px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+margin-right: 32px;
+cursor: pointer;
+
+}
+.orange{
+    background: #EE320B;
+border: 1px solid #666666;
+border-radius: 20px;
+color: #FFFFFF;
+
+}
+.overflow{
+ position:absolute;
+    height: 100%;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    top: 0px;
+    display: none;
+}
+.overflow.active{
+    background: rgba(102, 102, 102, 0.6);
+    display: block;
+}
+table{
+    margin-top: 43px;
+    width: 100%;
+    border-bottom: 2px solid #999999;
+}
+td,th{
+  padding: 0; 
+  display: inline-block;
+  
+}
+th{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: #999999;
+text-align: left;
+}
+td input{
+    width: 158px;
+    height: 33px;
+    border:none;
+    background:white;
+    border: 1px solid #DDDDDD;
+    outline: none;
+}
+.table__setting{
+    display:flex;
+    padding: 20px 90px 15px 136px;
+    background:#F0F0F0;
+    border-top: 2px solid #999999;
+}
+.table__list{
+    display: inline-block;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+color: #666666;
+padding-top: 35px;
+padding-left: 24px;
+}
+.table__list:last-child{
+    padding-bottom: 26px;
+    
+}
+.table__title{
+    display: inline-block;
+    padding-left: 36px;
+}
+.table__title-id{  
+     width: 98px;
+}
+.table__title-categori{
+   width: 170px;
+   
+}
+.table__title-after{
+   width: 147px;
+}
+.table__title-key{
+    width: 149px;
+}
+.table__title-ukrainian{
+   width: 230px;
+}
+.table__title-english{
+   width: 240px;
+    
+}
+.select__item{
+    margin-right: 322px;
+}
+.select{
+    width: 160px;
+    height: 33px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+border: 1px solid #DDDDDD;
+outline: none;
+padding-left: 17px;
+color: #000000;
+}
+.english__input{
+    margin-left: 77px;
+    margin-right: 84px;
+}
+.table__id{
+   
+    width: 118px;
+}
+.table__categori{
+    width: 170px;
+}
+.table__after-categori{
+   width: 148px;
+}
+.table__key{
+  width: 150px;
+}
+.table__ukrainian{
+   width: 230px;
+}
+.table__english{
+   width: 240px;
+}
+footer{
+    padding-top:24px ;
+    padding-bottom: 91px;
+}
+.page__number{
+    display: flex;
+    align-items:center;
+    width: 100%;
+    justify-content: flex-end;
+}
+.page__number-menu{
+    display: flex;
+}
+.page__number-item{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #DDDDDD;
+}
+.page__number-link{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 10px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #999999;
+}
+.left{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #DDDDDD;
+}
+.left img{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 15px;
+    margin-left: 16px;
+}
+.right{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #DDDDDD;
+}
+.right img{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 15px;
+    margin-left: 16px;
+}
