@@ -318,6 +318,9 @@ td,th{
   display: inline-block;
   
 }
+td{
+    cursor: context-menu;
+}
 th{
     font-family: 'Inter';
 font-style: normal;
@@ -412,6 +415,7 @@ color: #000000;
 }
 .table__key{
   width: 150px;
+
 }
 .table__ukrainian{
    width: 230px;
