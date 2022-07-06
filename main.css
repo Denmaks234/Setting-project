@@ -98,7 +98,7 @@ a{
 .header__inner{
     display: flex;
     align-items: center;
-    padding: 17px 21px 7px 66px;
+    padding: 17px 21px 7px 0px;
     justify-content: space-between;
 }
 .menu__list{
@@ -114,6 +114,9 @@ font-weight: 400;
 font-size: 14px;
 line-height: 17px;
 color: #777777;
+}
+.menu__link.active{
+    color: #ED4A28;
 }
 .menu__item:last-child{
     margin-right: 0;
@@ -147,9 +150,7 @@ color: #000000;
 }
 
 /* settings */
-.settings{
-    padding: 17px 21px 7px 130px;
-}
+
 .settings__inner{
     margin-top: 30px;
     display: flex;
@@ -164,13 +165,26 @@ font-size: 24px;
 line-height: 29px;
 color: #000000;
 }
+.setting__wrapper{
+    border-bottom: 1px solid #DDDDDD;
+}
 .settings__list{
     display: flex;
     align-items:center;
     padding-left: 60px;
 }
 .settings__item{
-    padding-right: 60px;
+    padding: 8px 78px;
+   
+   
+    background-color: #fff;
+    margin-bottom: 1px;
+}
+.settings__item.active{
+    
+    border: 1px solid #DDDDDD;
+    margin-bottom: -3px; 
+    border-bottom: 0;
 }
 .settings__link{
     font-family: 'Inter';
@@ -199,7 +213,7 @@ background: #F0F0F0;
 border: 1px solid #666666;
 border-radius: 20px;
 margin-right: 41px;
-
+cursor: pointer;
 }
 .modal__export,.modal__import{
     width: 100%;
