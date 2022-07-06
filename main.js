@@ -32,7 +32,7 @@ menuLinks.forEach(element=>(
 ))
 settingItems.forEach(element=>(
     element.addEventListener('click',function(event){
-        event.preventDefault
+     
         for(let j=0; j<settingItems.length;j++){
             settingItems[j].classList.remove('active')
         }
